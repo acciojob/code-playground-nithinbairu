@@ -4,9 +4,9 @@ const Login = ({login,setLogin}) => {
 
   return (
     <div>
-        <h1>Login Page</h1>
+        <h1>Log In</h1>
         {
-            login?<button onClick={()=>setLogin(false)}>Log Out</button>:<button onClick={()=>setLogin(true)}>Log In</button>
+            login?(<button onClick={()=>setLogin(false)}>Log Out</button>):(<button onClick={()=>setLogin(true)}>Log In</button>)
         }
     </div>
   )

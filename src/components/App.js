@@ -9,17 +9,17 @@ const App = () => {
   return (
     <Router>
       {
-        login?<p>Logged in. Now you can enter Playground</p>:<p>You are not authenticated, Please login first</p>
+        login?(<p>Logged in. Now you can enter Playground</p>):(<p>You are not authenticated, Please login first</p>)
       }
       <nav>
         <ul>
-          <li><Link to="/login" >Login</Link></li>
+          <li><Link to="/" >Login</Link></li>
           <li><Link to="/playground">PlayGround</Link></li>
         </ul>
         
       </nav>
       <Switch>
-        <Route exact path="/login" render={
+        <Route exact path="/" render={
           ()=><Login login={login} setLogin={setLogin} />
         }></Route>
         <Route path="/playground" render={
