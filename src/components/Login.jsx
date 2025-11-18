@@ -5,7 +5,9 @@ const Login = ({login,setLogin}) => {
   return (
     <div>
         <h1>Login Page</h1>
-        <button onClick={()=>setLogin(!login)}>{login?"Logout":"Login"}</button>
+        {
+            login?<button onClick={()=>setLogin(false)}>Log Out</button>:<button onClick={()=>setLogin(true)}>Log In</button>
+        }
     </div>
   )
 }
