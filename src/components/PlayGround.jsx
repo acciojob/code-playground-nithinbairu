@@ -7,7 +7,7 @@ const PlayGround = ({login}) => {
         <>
           <div></div>
           <div></div>
-          <p>Hi welcome to code playground</p>
+          <p>Hi Welcome to Code PlayGround</p>
         </>
       ) : (
         <p>Page not found</p>
