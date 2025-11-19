@@ -6,7 +6,9 @@ const Login = ({login,setLogin}) => {
     <div>
         <h1>Log In</h1>
         {
-            login?(<button onClick={()=>setLogin(false)}>Log Out</button>):(<button onClick={()=>setLogin(true)}>Log In</button>)
+            login?(<div>
+                <button onClick={()=>setLogin(false)}>Log Out</button><p>Log Out</p>
+            </div>):(<button onClick={()=>setLogin(true)}>Log In</button>)
         }
     </div>
   )

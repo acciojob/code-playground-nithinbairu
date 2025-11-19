@@ -15,7 +15,7 @@ const App = () => {
         login ? (
           <>
             <p>Logged in, Now you can enter Playground</p>
-            <p>Log Out</p>
+            <button onClick={handleLogout}>Log Out</button>
           </>
         ) : (
           <p>You are not authenticated, Please login first</p>
