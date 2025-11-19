@@ -9,7 +9,7 @@ const App = () => {
   return (
     <Router>
       {
-        login?(<p>Logged in. Now you can enter Playground</p>):(<p>You are not authenticated, Please login first</p>)
+        login?(<p>Logged in, Now you can enter Playground</p>):(<p>You are not authenticated, Please login first</p>)
       }
       <nav>
         <ul>
