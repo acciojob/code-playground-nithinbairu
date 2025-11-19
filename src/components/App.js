@@ -13,13 +13,13 @@ const App = () => {
       }
       <nav>
         <ul>
-          <li><Link to="/" >Login</Link></li>
-          <li><Link to="/playground">PlayGround</Link></li>
+          <li><Link to="/login" >Login</Link></li>
+          <li><Link to={login?"/playground":"/login"}>PlayGround</Link></li>
         </ul>
         
       </nav>
       <Switch>
-        <Route exact path="/" render={
+        <Route exact path="/login" render={
           ()=><Login login={login} setLogin={setLogin} />
         }></Route>
         <Route path="/playground" render={
