@@ -1,3 +1,5 @@
+
+import React from 'react'
 const PlayGround = ({login}) => {
   return (
     <div className="main-container">
@@ -13,3 +15,4 @@ const PlayGround = ({login}) => {
     </div>
   )
 }
+export default PlayGround
